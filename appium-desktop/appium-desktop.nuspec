@@ -38,7 +38,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Appium</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/appium/appium-desktop</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/usamaejaz/master/icons/appium-desktop.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/usamaejaz/chocolatey-packages/e9444321/icons/appium-desktop.png</iconUrl>
     <copyright>Copyright 2012-2016 JS Foundation and other contributors</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://raw.githubusercontent.com/appium/appium-desktop/master/LICENSE</licenseUrl>
