@@ -20,6 +20,16 @@ if ($key.Count -eq 1) {
       $packageArgs['silentArgs'] = "$($_.PSChildName) $($packageArgs['silentArgs'])"
       
       $packageArgs['file'] = ''
+    } else {
+
+      $uninstallString = $packageArgs['file'].split('"')
+        
+      if($uninstallString.Length -eq 3){
+        $packageArgs['file'] = $uninstallString[1]
+        if ($uninstallString[2].Trim(" ").Length -gt 0){
+          $packageArgs['silentArgs'] = "$($packageArgs['silentArgs']) $($uninstallString[2].Trim(" "))"
+        }
+      }
     }
 
     Uninstall-ChocolateyPackage @packageArgs
