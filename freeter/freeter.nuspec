@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>freeter</id>
+    <version>1.2.1</version>
+    <packageSourceUrl>https://github.com/usamaejaz/chocolatey-packages</packageSourceUrl>
+    <owners>Usama Ejaz</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Freeter</title>
+    <authors>Alex Kaul</authors>
+    <iconUrl>https://cdn.rawgit.com/usamaejaz/chocolatey-packages/3bdf0b3b/icons/freeter.png</iconUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>freeter project management productivity webapp dashboard</tags>
+    <summary>The smartest way to work on your computer.</summary>
+    <description>Freeter is a productivity app that allows you to gather everything you need to work in one place and access them quickly and easily.</description>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
