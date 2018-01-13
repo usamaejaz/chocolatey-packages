@@ -12,6 +12,8 @@
     <!-- This section is about the software itself -->
     <title>Freeter</title>
     <authors>Alex Kaul</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://freeter.io/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/usamaejaz/chocolatey-packages/3bdf0b3b/icons/freeter.png</iconUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
