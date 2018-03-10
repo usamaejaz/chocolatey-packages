@@ -1,7 +1,7 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/appium/appium-desktop/releases/download/v1.3.2/Appium.Setup.1.3.2.exe'
+$url        = 'https://github.com/appium/appium-desktop/releases/download/v1.4.0/appium-desktop-setup-1.4.0.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -11,7 +11,7 @@ $packageArgs = @{
 
   softwareName  = 'Appium*'
 
-  checksum      = 'D6834C0B58CA6AAE725F00ACF0AC4FC7698B434995C5FE52EBBF3557CDC3BCC1'
+  checksum      = 'CFED77F9477F081CB2065792374221FC379626D7031336A584363022F8B26C74'
   checksumType  = 'sha256'
 
   silentArgs    = "/S"
