@@ -4,7 +4,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'Appium*'
   fileType      = 'exe'
-  silentArgs    = "--silent"
+  silentArgs    = "/S" # "--silent"
   validExitCodes= @(0)
 }
 
