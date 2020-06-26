@@ -1,8 +1,11 @@
 ﻿
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/appium/appium-desktop/releases/download/v1.12.1/Appium-windows-1.12.1.exe'
-$url64        = 'https://github.com/appium/appium-desktop/releases/download/v1.12.1/Appium-windows-1.12.1.exe'
+
+$url        = 'https://github.com/appium/appium-desktop/releases/download/v1.15.1/Appium-windows-1.15.1.exe'
+$url64        = 'https://github.com/appium/appium-desktop/releases/download/v1.15.1/Appium-windows-1.15.1.exe'
+$checksum = '10c51366a351c7260c2824fcad417f35664c89d08b576cb702f5c1e24abba826'
+$checksum64 = '10c51366a351c7260c2824fcad417f35664c89d08b576cb702f5c1e24abba826'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -13,9 +16,9 @@ $packageArgs = @{
 
   softwareName  = 'Appium*'
 
-  checksum      = '7F8A4D1E81479262AA2E025B10DE2EB0D92921ED3705603134024BBDE5CE9624'
+  checksum      = $checksum
   checksumType  = 'sha256'
-  checksum64      = '7F8A4D1E81479262AA2E025B10DE2EB0D92921ED3705603134024BBDE5CE9624'
+  checksum64      = $checksum64
   checksumType64  = 'sha256'
 
   silentArgs    = "/S" # "--silent"
