@@ -2,10 +2,10 @@
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url        = 'https://github.com/appium/appium-desktop/releases/download/v1.18.3/Appium-windows-1.18.3.exe'
-$url64        = 'https://github.com/appium/appium-desktop/releases/download/v1.18.3/Appium-windows-1.18.3.exe'
-$checksum = '9b5ed84e40faceb20a31b5732c532117bbe3a8c974e987ce5b1493140e5e2e79'
-$checksum64 = '9b5ed84e40faceb20a31b5732c532117bbe3a8c974e987ce5b1493140e5e2e79'
+$url        = 'https://github.com/appium/appium-desktop/releases/download/v1.20.0/Appium-windows-1.20.0.exe'
+$url64        = 'https://github.com/appium/appium-desktop/releases/download/v1.20.0/Appium-windows-1.20.0.exe'
+$checksum = '39ddbf1ca81eed6efdd4518b3192a13a68106849f79275b9204a8ec33e569af6'
+$checksum64 = '39ddbf1ca81eed6efdd4518b3192a13a68106849f79275b9204a8ec33e569af6'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
